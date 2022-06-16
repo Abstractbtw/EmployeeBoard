@@ -1,7 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import '../css/App.css'
 
 const EditUserForm = props => {
   const [user, setUser] = useState(props.currentUser)
+
+  useEffect(() => {setUser(props.currentUser)}, [props])
 
   const handleInputChange = event => {
     const { name, value } = event.target
@@ -12,6 +15,7 @@ const EditUserForm = props => {
   const handleSubmit = event => {
     event.preventDefault()
     if (!user.name || !user.workinghours) return
+
     props.updateUser(user.id, user)
   }
 
@@ -19,17 +23,15 @@ const EditUserForm = props => {
     <form onSubmit={handleSubmit}>
       <label>Name</label>
       <br></br>
-      <input type="text" name="name" value={user.name} onChange={handleInputChange}
-      />
+      <input type="text" name="name" value={user.name} onChange={handleInputChange}/>
       <br></br>
-      <label>Username</label>
+      <label>Working hours</label>
       <br></br>
-      <input type="text" name="workinghours" value={user.workinghours} onChange={handleInputChange}
-      />
+      <input type="text" name="workinghours" value={user.workinghours} onChange={handleInputChange}/>
       <br></br>
-      <button>Update user</button>
+      <button className='smallbutton'>Update user</button>
       <br></br>
-      <button onClick={() => props.setEditing(false)} className="button muted-button">
+      <button className='smallbutton' onClick={() => props.setEditing(false)}>
         Cancel
       </button>
     </form>

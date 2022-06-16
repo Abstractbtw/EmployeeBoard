@@ -8,7 +8,7 @@ function WorkingHours() {
       labels: UserData.map((data) => data.name),
       datasets: [
         {
-          label: "Working hours per month",
+          label: "",
           data: UserData.map((data) => data.workinghours*4),
           backgroundColor: [
             "#33BBFF",
@@ -19,7 +19,7 @@ function WorkingHours() {
           borderWidth: 2,
         },
         {
-          label: "Real working hours per month",
+          label: "",
           data: UserData.map((data) => data.realworkhours),
           backgroundColor: [
             "#DA7C50",

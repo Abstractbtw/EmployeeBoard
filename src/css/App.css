@@ -1,8 +1,43 @@
 .container{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Andale Mono, monospace;
+    font-weight: 800;
     margin-left: 350px;
     margin-right: 350px;
     margin-top: 100px;
+    min-width: 383px;
+}
+
+.defaultbutton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.defaultbutton:hover{
+    background-color: #4ca3af;
+}
+
+.smallbutton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    margin: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.smallbutton:hover{
+    background-color: #4ca3af;
 }
 
 .flex-row{
@@ -15,6 +50,95 @@
     text-align: left;
     line-height: 25px;
 }
+
 td{
     padding: 5px;
+}
+
+.permonth{
+    width: 26px;
+    height: 13px;
+    background-color: #33BBFF;
+}
+
+.realwork{
+    width: 26px;
+    height: 13px;
+    background-color: #DA7C50;
+}
+
+.vacationhrs{
+    width: 26px;
+    height: 13px;
+    background-color: #8ADA4F;
+}
+
+.sickhrs{
+    width: 26px;
+    height: 13px;
+    background-color: #E1CA39;
+}
+
+.line{
+    border-bottom: 1px solid black;
+}
+
+.tableline{
+    border-bottom: 2px solid lightgrey;
+}
+
+.popup-box {
+  position: fixed;
+  background: #00000099;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+ 
+.popup {
+  position: relative;
+  width: 15%;
+  margin: 0 auto;
+  height: auto;
+  max-height: 70vh;
+  margin-top: 300px;
+  background: white;
+  border-radius: 4px;
+  padding: 20px;
+  border: none;
+  overflow: auto;
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid lightgrey;
+  outline: none;
+}
+
+input[type=number] {
+    border: none;
+    border-bottom: 2px solid lightgrey;
+    outline: none;
+  }
+
+.flex-large {
+  margin: auto;
+}
+
+.tablebg{
+    background-color: lightgrey;
+}
+
+.sort:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+.placeholder {
+    width: 100%
+}
+
+.searchForm {
+    text-align: center;
 }

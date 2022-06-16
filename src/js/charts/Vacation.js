@@ -8,7 +8,7 @@ function Vacation() {
       labels: UserData.map((data) => data.name),
       datasets: [
         {
-          label: "Vacation hours per month",
+          label: "",
           data: UserData.map((data) => data.vacationhours),
           backgroundColor: [
             "#8ADA4F",
@@ -19,7 +19,7 @@ function Vacation() {
           borderWidth: 2,
         },
         {
-          label: "Sick hours per month",
+          label: "",
           data: UserData.map((data) => data.sickhours),
           backgroundColor: [
             "#E1CA39",
