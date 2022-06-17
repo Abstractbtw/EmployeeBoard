@@ -5,6 +5,7 @@ import Charts from './js/Charts'
 import './css/App.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 const renderBoard = () => {
   root.render(
     <React.StrictMode>

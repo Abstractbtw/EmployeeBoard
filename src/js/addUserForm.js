@@ -25,11 +25,11 @@ const AddUserForm = props => {
     <form onSubmit={handleAddUser}>
       <label>Name</label>
       <br></br>
-      <input type="text" name="name" value={user.name} onChange={handleInputChange}/>
+      <input data-testid="name-input" type="text" name="name" value={user.name} onChange={handleInputChange}/>
       <br></br>
       <label>Working hours</label>
       <br></br>
-      <input type="number" name="workinghours" value={user.workinghours} onChange={handleInputChange}/>
+      <input data-testid="hours-input" type="number" name="workinghours" value={user.workinghours} onChange={handleInputChange}/>
       <br></br>
       <button className='smallbutton'>Add new user</button>
     </form>
